@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Девайс: каталог</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <nav class="main-navigation">
+        <div class="header-logo">
+          <img src="http://placehold.it/150x100">
+        </div>
+        <ul class="top-menu">
+          <li class="search-block">
+            <form action="post" class="header-search">
+              <input type="search" name="search" id="search-field">
+              <label for="search-field">Поиск по сайту</label>
+              <button class="btn-search">Найти</button>
+            </form>
+          </li>
+          <li class="user-block">
+            <a href="#">Валентин Петухов</a>
+            <a href="#">Войти</a>
+          </li>
+          <li class="compare-block">
+            <a href="#">Сравнить</a>
+          </li>
+          <li class="basket-block">
+            <a href="♯">Корзина</a>
+          </li>
+        </ul>
+        <ul class="bottom-menu">
+          <li>
+            <a href="#">Каталог товаров</a>
+            <ul class="sub-menu">
+              <li>
+                 <a href="#">Виртуальная реальность</a>
+              </li>
+              <li>
+                <a href="#">Моноподы для селфи</a>
+              </li>
+              <li>
+                <a href="#">Экшн-камеры</a>
+              </li>
+              <li>
+                <a href="#">Фитнесс-браслеты</a>
+              </li>
+              <li>
+                <a href="#">Умные часы</a>
+              </li>
+              <li>
+                <a href="#">Квадрокоптеры</a>
+              </li>
+            </ul>   
+          </li>
+          <li>
+            <a href="#">Доставка</a>
+          </li>
+          <li>
+            <a href="#">Гарантия</a>
+          </li>
+          <li>
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <h1>Моноподы для селфи</h1>
+    <ul class="breadcrumbs">
+      <li>
+        <a href="#">Главная</a>
+      </li>
+      <li>
+        <a href="#">Каталог товаров</a>
+      </li>
+      <li>
+        <a href="#">Моноподы для селфи</a>
+      </li>
+    </ul>
+    <div class="filter-aside">
+      <div class="filter-title">Фильтр</div>
+      <form class="filter-form" action="get">
+        <div class="filter-value">
+          <p>Стоимость</p>
+          <div class="range-filter">
+            <div class="range-control">
+              <div class="scale">
+                <div class="bar"></div>
+                <div class="range-toggle toggle-min"></div>
+                <div class="range-toggle toggle-max"></div>
+              </div>
+            </div>
+            <div class="price-control">
+              <label class="min-price">от
+                <input type="text" name="min-price" value="0">
+              </label>
+              <label class="max-price">до
+                <input type="text" name="max-price" value="5000">
+              </label>
+            </div>
+          </div>   
+        </div>
+        <div class="filter-color">
+          <p>Цвет</p>
+          <input type="checkbox" name="black" id="checkbox-1" checked>
+          <label for="checkbox-1">Черный</label>
+          <input type="checkbox" name="white" id="checkbox-2">
+          <label for="checkbox-2">Белый</label>
+          <input type="checkbox" name="blue" id="checkbox-3" checked>
+          <label for="checkbox-3">Синий</label>
+          <input type="checkbox" name="red" id="checkbox-4" checked>
+          <label for="checkbox-4">Красный</label>
+          <input type="checkbox" name="pink" id="checkbox-5">
+          <label for="checkbox-5">Розовый</label>
+        </div>
+        <div class="filter-bluetooth">
+          <input type="checkbox" name="with-bluetooth" id="with-bluetooth-field">
+          <label for="with-bluetooth-field">Есть</label>
+          <input type="checkbox" name="without-bluetooth" id="without-bluetooth-field">
+          <label for="without-bluetooth-field">Нет</label>
+        </div>
+        <button class="btn form-btn">Показать</button>
+      </form>
+    </div>
+    <div class="filter-sort">
+      <p>Сортировка</p>
+      <ul class="filter-types">
+        <li>
+          <a href="#"></a>
+        </li>
+        <li>
+          <a href="#"></a>
+        </li>
+        <li>
+          <a href="#"></a>
+        </li>
+      </ul>
+    </div>
+    <div class="filter-pointers">
+      <a href="#" class="arrow arrow-up"><span class="visually-hidden">По возрастанию</span></a>
+      <a href="#" class="arrow arrow-down"><span class="visually-hidden">По убыванию</span></a>
+    </div>
+    <div class="catalog">
+      <div class="catalog-item">
+        <img src="http://placehold.it/150x100">
+        <span>Любительская селфи-палка</span>
+        <span>500 руб.</span>
+        <div class="action">
+          <button class="btn btn-action basket-action">В корзину</button>
+          <button class="btn btn-action compare-action">Добавить к сравнению</button>
+        </div>
+      </div>
+      <div class="catalog-item">
+        <img src="http://placehold.it/150x100">
+        <span>Профессиональная селфи-палка</span>
+        <span>1 500 руб.</span>
+        <div class="action">
+          <button class="btn btn-action basket-action">В корзину</button>
+          <button class="btn btn-action compare-action">Добавить к сравнению</button>
+        </div>
+      </div>
+      <div class="catalog-item">
+        <img src="http://placehold.it/150x100">
+        <span>Непотопляемая селфи-палка</span>
+        <span>2 500 руб.</span>
+        <div class="action">
+          <button class="btn btn-action basket-action">В корзину</button>
+          <button class="btn btn-action compare-action">Добавить к сравнению</button>
+        </div>
+      </div>
+      <div class="catalog-item">
+        <img src="http://placehold.it/150x100">
+        <span>Селфи-палка «Следуй за мной»</span>
+        <span>4 500 руб.</span>
+        <div class="flag flag-new"><span class="visually-hidden">Новинка</span></div>
+        <div class="action">
+          <button class="btn btn-action basket-action">В корзину</button>
+          <button class="btn btn-action compare-action">Добавить к сравнению</button>
+        </div>
+      </div>
+    </div>
+    <div class="paginator">
+      <a class="paginator__link">Назад</a>
+      <a class="paginator__link paginator__link_active" href="#">1</a>
+      <a class="paginator__link" href="#">2</a>
+      <a class="paginator__link" href="#">3</a>
+      <a class="paginator__link" href="#">Вперед</a>
+    </div>
+
+    <footer class="page-footer">
+      <nav class="footer-nav">
+        <div class="footer-logo">Device</div>
+        <ul class="footer-menu">
+          <li>
+            <a href="#">Войти</a>
+          </li>
+          <li>
+            <a href="#">Сравнить</a>
+          </li>
+          <li>
+            <a href="#">Корзина</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="footer-middle">
+        <p class="address"><img src="http://placehold.it/150x100"></p>
+        <ul class="footer-service">
+          <li>
+            <a href="#">Доставка</a>
+          </li>
+          <li>
+            <a href="#">Гарантия</a>
+          </li>
+          <li>
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+        <p class="phone">Тел.: +7 (495) 495-95-95</p>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-social">
+          <a href="#"><span class="visually-hidden">Фейсбук</span></a>
+          <a href="#"><span class="visually-hidden">Инстаграмм</span></a>
+          <a href="#"><span class="visually-hidden">Твиттер</span></a>
+        </div>
+        <div class="footer-copyright">
+          <img src="http://placehold.it/150x100">
+        </div>
+      </div>
+    </footer>
+
+
+  </body>
+</html>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur mollitia atque eveniet eaque aliquam quae, hic iusto earum, assumenda cupiditate temporibus suscipit, laborum impedit commodi. Eaque, doloribus fugit rerum ipsa?</p>
+<a href="#">Фейсбук</a>
+<div class="product-card">
+  <div class="product-card__name"></div>
+  <a href="" class="product-card__link"><img src="" alt="" class="product-card__image"></a>
+</div>
