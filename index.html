@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Девайс: главная</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <input type="radio" id="btn-1" name="toggle" checked>
@@ -10,9 +11,7 @@
     <input type="radio" id="btn-3" name="toggle">
     <header class="page-header">
       <nav class="main-navigation">
-        <div class="header-logo">
-          <img src="http://placehold.it/150x100">
-        </div>
+        <div class="header-logo">Device</div>
         <ul class="top-menu">
           <li class="search-block">
             <form action="get" class="header-search">
@@ -69,6 +68,9 @@
     </header>
     <div class="slider">
       <div class="slide" id="slide-1">
+        <div class="slider-image">
+          <img src="img/slider-1.png" width="384" height="486" alt="Самая длиная палка для селфи">
+        </div>
         <div class="slide-title">Делай селфи, как Бен Стиллер!</div>
         <div class="slide-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</div>
         <a href="#" class="btn slide-btn">Подробнее</a>
@@ -88,6 +90,9 @@
         </ul>
       </div>
       <div class="slide" id="slide-2">
+        <div class="slider-image">
+          <img src="img/slider-2.png" width="345" height="485" alt="Мотивирующий фитнесс-браслет">
+        </div>
         <div class="slide-title">Худеем правильно!</div>
           <div class="slide-text">Мотивирующие фитнесс-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</div>
         <a href="#" class="btn slide-btn">Подробнее</a>
@@ -100,6 +105,9 @@
       </div>
  
       <div class="slide" id="slide-3">
+        <div class="slider-image">
+          <img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер с мощным лазером">
+        </div>
         <div class="slide-title">Порхает как бабочка, жалит как пчела!</div>
         <div class="slide-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</div>
         <a href="#" class="btn slide-btn">Подробнее</a>
@@ -139,55 +147,55 @@
     <div class="service-slides">
       <div class="service-controls">
         <ul class="service-menu">
-          <li>
-            <a href="#">Доставка</a>
+          <li class="service-menu__item">
+            <a class="service-menu__link" href="#">Доставка</a>
           </li>
-          <li>
-            <a href="#">Гарантия</a>
+          <li class="service-menu__item">
+            <a class="service-menu__link" href="#">Гарантия</a>
           </li>
-          <li>
-            <a href="#">Кредит</a>
+          <li class="service-menu__item">
+            <a class="service-menu__link" href="#">Кредит</a>
           </li>
         </ul>
       </div>
       <div class="service-slide" id="service-1">
-        <h2>Доставка</h2>
-        <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+        <h2 class="service-slide__title">Доставка</h2>
+        <p class="service-slide__description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
       </div>
       <div class="service-slide" id="service-2">
-        <h2>Гарантия</h2>
-        <p>Если из-за возгарания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+        <h2 class="service-slide__title">Гарантия</h2>
+        <p class="service-slide__description">Если из-за возгарания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
       </div>
       <div class="service-slide" id="service-3">
-        <h2>Кредит</h2>
-        <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+        <h2 class="service-slide__title">Кредит</h2>
+        <p class="service-slide__description">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
       </div>
     </div>
     <div class="brands">
-      <img src="http://placehold.it/150x100">
-      <img src="http://placehold.it/150x100">
-      <img src="http://placehold.it/150x100">
-      <img src="http://placehold.it/150x100">
+      <img class="brands__item brands__item_item-1" src="img/dji-logo.png" width="260" height="100" alt="dji-logo">
+      <img class="brands__item brands__item_item-2" src="img/sp-logo.png" width="260" height="100" alt="spGagets-logo">
+      <img class="brands__item brands__item_item-3" src="img/gopro-logo.png" width="260" height="100" alt="GoPro-logo">
+      <img class="brands__item brands__item_item-4" src="img/vive-logo.png" width="260" height="100" alt="vive-logo">
     </div>
     <div class="info">
       <div class="about-us">
-        <h3>О нас</h3>
-        <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-        <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+        <h3 class="about-us__title">О нас</h3>
+        <p class="about-us__description">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+        <p class="about-us__description">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
         <ul class="transport">
-          <li>Деловые Линии</li>
-          <li>Автотрейдинг</li>
-          <li>ЖелДорЭкспедиция</li>
+          <li class="transport__item">Деловые Линии</li>
+          <li class="transport__item">Автотрейдинг</li>
+          <li class="transport__item">ЖелДорЭкспедиция</li>
         </ul>
-        <a href="#" class="btn about-btn">Подробнее о нас</a>
+        <a href="#" class="btn about-us__btn">Подробнее о нас</a>
       </div>
       <div class="contacts">
-        <h3>Контакты</h3>
-        <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+        <h3 class="contacts__title">Контакты</h3>
+        <p class="contacts__info">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
         <div class="map">
-          <img src="http://placehold.it/150x100">
+          <img src="img/map.png" width="560" height="222" alt="Карта">
         </div>
-        <button class="btn contacts-btn">напишите нам</button>
+        <button class="btn contacts__btn">напишите нам</button>
       </div>
     </div>
     <footer class="page-footer">
@@ -206,7 +214,7 @@
         </ul>
       </nav>
       <div class="footer-middle">
-        <p class="address"><img src="http://placehold.it/150x100"></p>
+        <p class="address">г. Москва, ул. Строителей, 15</p>
         <ul class="footer-service">
           <li>
             <a href="#">Доставка</a>
@@ -227,7 +235,7 @@
           <a href="#"><span class="visually-hidden">Твиттер</span></a>
         </div>
         <div class="footer-copyright">
-          <img src="http://placehold.it/150x100">
+          <a href="https://htmlacademy.ru/"><span class="visually-hidden">Htmlacademy.ru</span></a>
         </div>
       </div>
     </footer>

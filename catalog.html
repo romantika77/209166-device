@@ -3,13 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>Девайс: каталог</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
       <nav class="main-navigation">
-        <div class="header-logo">
-          <img src="http://placehold.it/150x100">
-        </div>
+        <div class="header-logo">Device</div>
         <ul class="top-menu">
           <li class="search-block">
             <form action="post" class="header-search">
@@ -67,13 +66,13 @@
     </header>
     <h1>Моноподы для селфи</h1>
     <ul class="breadcrumbs">
-      <li>
+      <li class="breadcrumbs__item">
         <a href="#">Главная</a>
       </li>
-      <li>
+      <li class="breadcrumbs__item">
         <a href="#">Каталог товаров</a>
       </li>
-      <li>
+      <li class="breadcrumbs__item">
         <a href="#">Моноподы для селфи</a>
       </li>
     </ul>
@@ -142,40 +141,40 @@
     </div>
     <div class="catalog">
       <div class="catalog-item">
-        <img src="http://placehold.it/150x100">
-        <span>Любительская селфи-палка</span>
-        <span>500 руб.</span>
+        <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
+        <span class="catalog-item__name">Любительская селфи-палка</span>
+        <span class="catalog-item__value">500 руб.</span>
         <div class="action">
-          <button class="btn btn-action basket-action">В корзину</button>
-          <button class="btn btn-action compare-action">Добавить к сравнению</button>
+          <button class="btn action__btn action__btn_basket">В корзину</button>
+          <button class="btn action__btn action__btn_compare">Добавить к сравнению</button>
         </div>
       </div>
       <div class="catalog-item">
-        <img src="http://placehold.it/150x100">
-        <span>Профессиональная селфи-палка</span>
-        <span>1 500 руб.</span>
+        <img src="img/item-1.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
+        <span class="catalog-item__name">Профессиональная селфи-палка</span>
+        <span class="catalog-item__value">1 500 руб.</span>
         <div class="action">
-          <button class="btn btn-action basket-action">В корзину</button>
-          <button class="btn btn-action compare-action">Добавить к сравнению</button>
+          <button class="btn action__btn action__btn_basket">В корзину</button>
+          <button class="btn action__btn action__btn_compare">Добавить к сравнению</button>
         </div>
       </div>
       <div class="catalog-item">
-        <img src="http://placehold.it/150x100">
-        <span>Непотопляемая селфи-палка</span>
-        <span>2 500 руб.</span>
+        <img src="img/item-1.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+        <span class="catalog-item__name">Непотопляемая селфи-палка</span>
+        <span class="catalog-item__value">2 500 руб.</span>
         <div class="action">
-          <button class="btn btn-action basket-action">В корзину</button>
-          <button class="btn btn-action compare-action">Добавить к сравнению</button>
+          <button class="btn action__btn action__btn_basket">В корзину</button>
+          <button class="btn action__btn action__btn_compare">Добавить к сравнению</button>
         </div>
       </div>
       <div class="catalog-item">
-        <img src="http://placehold.it/150x100">
-        <span>Селфи-палка «Следуй за мной»</span>
-        <span>4 500 руб.</span>
+        <img src="img/item-1.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
+        <span class="catalog-item__name">Селфи-палка «Следуй за мной»</span>
+        <span class="catalog-item__value">4 500 руб.</span>
         <div class="flag flag-new"><span class="visually-hidden">Новинка</span></div>
         <div class="action">
-          <button class="btn btn-action basket-action">В корзину</button>
-          <button class="btn btn-action compare-action">Добавить к сравнению</button>
+          <button class="btn action__btn action__btn_basket">В корзину</button>
+          <button class="btn action__btn action__btn_compare">Добавить к сравнению</button>
         </div>
       </div>
     </div>
@@ -203,7 +202,7 @@
         </ul>
       </nav>
       <div class="footer-middle">
-        <p class="address"><img src="http://placehold.it/150x100"></p>
+        <p class="address">г. Москва, ул. Строителей, 15</p>
         <ul class="footer-service">
           <li>
             <a href="#">Доставка</a>
@@ -224,18 +223,10 @@
           <a href="#"><span class="visually-hidden">Твиттер</span></a>
         </div>
         <div class="footer-copyright">
-          <img src="http://placehold.it/150x100">
+          <a href="https://htmlacademy.ru/"><span class="visually-hidden">Htmlacademy.ru</span></a>
         </div>
       </div>
     </footer>
 
-
   </body>
 </html>
-
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur mollitia atque eveniet eaque aliquam quae, hic iusto earum, assumenda cupiditate temporibus suscipit, laborum impedit commodi. Eaque, doloribus fugit rerum ipsa?</p>
-<a href="#">Фейсбук</a>
-<div class="product-card">
-  <div class="product-card__name"></div>
-  <a href="" class="product-card__link"><img src="" alt="" class="product-card__image"></a>
-</div>
