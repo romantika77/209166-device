@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Девайс: главная</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -11,12 +13,12 @@
       <header class="page-header">
        
           <nav class="main-navigation">
-            <div class="header-logo">Device</div>
+            <div class="header-logo"><a class="header-logo__link">Device</a></div>
             <ul class="top-menu">
               <li class="search-block">
                 <form action="get" class="header-search">
-                  <input type="search" name="search" id="search-field">
-                  <label for="search-field">Поиск по сайту</label>
+                <label for="search-field"></label>
+                  <input type="search" name="search" id="search-field" placeholder="Поиск по сайту">
                   <button class="btn-search">Найти</button>
                 </form>
               </li>
@@ -31,8 +33,8 @@
               </li>
             </ul>
             <ul class="bottom-menu">
-              <li>
-                <a href="#">Каталог товаров</a>
+              <li class="menu-catalog">
+                <a class="menu-catalog__link" href="catalog.html">Каталог товаров</a>
                 <div class="sub-menu-container">
                   <ul class="sub-menu-1">
                     <li>
@@ -60,13 +62,13 @@
                   </ul>
                 </div>   
               </li>
-              <li>
+              <li  class="menu-delivery">
                 <a href="#">Доставка</a>
               </li>
-              <li>
+              <li class="menu-guarantee">
                 <a href="#">Гарантия</a>
               </li>
-              <li>
+              <li  class="menu-contacts">
                 <a href="#">Контакты</a>
               </li>
             </ul>
