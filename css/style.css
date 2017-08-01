@@ -88,7 +88,7 @@ img {
 .page-header {
   padding-right: 60px;
   padding-left: 60px;
-  padding-bottom: 33px;
+  padding-bottom: 45px;
   padding-top: 16px;
   /*background-color: rgba(240, 197, 46, 0.5);*/
   background-image: linear-gradient(#ffffff, #ffffff 41px, rgba(240, 197, 46, 0.5) 41px, rgba(240, 197, 46, 0.5));
@@ -101,6 +101,14 @@ img {
   color: #000000;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.header-logo__link:hover {
+  color: #464646;
+}
+
+.header-logo__link:active {
+  color: #666666;
 }
 
 .page-header .top-menu {
@@ -189,10 +197,26 @@ label[for="search-field"]::before {
   position: relative;
 }
 
+.top-menu .user-block__link_logout {
+  color: rgba(0, 0, 0, 0.3);
+  /*background-color: pink;*/
+}
+
+.user-block__link_login {
+  margin-right: 18px;
+}
+
 .top-menu .user-block__link:hover,
 .top-menu .compare-block__link:hover,
 .top-menu .basket-block__link:hover {
   opacity: 0.6;
+}
+
+
+.top-menu .user-block__link:active,
+.top-menu .compare-block__link:active,
+.top-menu .basket-block__link:active {
+  opacity: 0.3;
 }
 
 .user-block__link:active,
@@ -214,7 +238,7 @@ label[for="search-field"]::before {
   background-image: url("../img/sprites.png");
 }
 
-.top-menu .user-block__link::before {
+.top-menu .user-block__link:not(.user-block__link_logout)::before {
   left: -26px;
   background-position: -20px -1315px;
 }
@@ -911,12 +935,100 @@ label[for="search-field"]::before {
   background-color: #000000;
 } 
 
+/*?////////////////////////////////////////////////оформление внутренней страницы*/
+
+.inner-title {
+  margin: 0;
+  margin-left: 60px;
+  margin-top: 38px;
+  padding: 0;
+  color: #000000;
+  font-size: 47px;
+  line-height: 47px;
+  font-family: "GilroyExtraBold", "Arial", sans-serif;
+  background-color: rgba(70, 70, 70, 0.08);
+}
+
+.breadcrumbs {
+  margin: 0;
+  margin-left: 60px;
+  margin-top: 18px;
+  padding: 0;
+  list-style: none;
+}
+
+.breadcrumbs__item {
+  position: relative;
+  display: inline;
+  margin-right: 36px;
+}
+
+.breadcrumbs__item:not(.breadcrumbs__item_active)::after {
+  position: absolute;
+  content: "";
+  top: 8px;
+  right: -17px;
+  width: 4px;
+  height: 7px;
+  background-image: url("../img/sprites.png");
+  background-repeat: no-repeat;
+  background-position: -20px -20px;
+  background-color: transparent;
+}
+
+.breadcrumbs__link {
+  font-size: 14px;
+  line-height: 36px;
+  color: rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+}
+
+.catalog-wrapper {
+  margin-top: 40px;
+  background-color: #fafaaa;
+}
+
 .catalog-container {
   width: 1200px;
   padding: 0 20px;
+  /*padding-top: 0;*/
+  /*padding-bottom: 0;*/
+  /*padding-right: 60;*/
+  /*padding-left: 80px;*/
   margin: 0 auto;
   display: flex;
   background-color: wheat;
+}
+
+/*/////////////////////оформление боковой панели с фильтром*/
+
+.filter-aside {
+  width: 328px;
+  padding-left: 60px;
+  background-color: #f0f0f0;
+  
+}
+
+.filter-aside__title,
+.filter-sort__title {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 16px;
+  color: #000000;
+  font-family: "GilroyExtraBold", "Arial", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.filter-aside__title {
+  padding-top: 27px;
+  padding-bottom: 28px;
+  background-color: #dddddd;
+}
+
+.assortment {
+  width: 832px;
 }
 
 .catalog {
