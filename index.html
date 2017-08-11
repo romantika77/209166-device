@@ -5,7 +5,7 @@
     <title>Девайс: главная</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
 
@@ -76,16 +76,16 @@
       </header>
 
       <div class="slider">
+        <input type="radio" id="slide-btn-1" name="toggle" checked>
+        <input type="radio" id="slide-btn-2" name="toggle">
+        <input type="radio" id="slide-btn-3" name="toggle">
         <div class="slider-controls">
-          <input type="radio" id="btn-1" name="toggle" checked>
-          <label for="btn-1"></label>
-          <input type="radio" id="btn-2" name="toggle">
-          <label for="btn-2"></label>
-          <input type="radio" id="btn-3" name="toggle">
-          <label for="btn-2"></label>
+          <label class="active" for="slide-btn-1"></label>
+          <label for="slide-btn-2"></label>
+          <label for="slide-btn-3"></label>
         </div>
         <div class="slide slide__item1" id="slide-1">
-          <div class="slider-container">
+          <div class="slider-container slider-container_">
             <div class="slider-image slider-image_image1">
               <img class="slider-image__picture slider-image__picture_picture1" src="img/slider-1.png" width="384" height="486" alt="Самая длиная палка для селфи">
             </div>
@@ -181,17 +181,19 @@
 
     <div class="service">
       <div class="service-container">
-        
+        <input type="radio" name="toggle1" id="service-btn1" checked>
+        <input type="radio" name="toggle1" id="service-btn2">
+        <input type="radio" name="toggle1" id="service-btn3">
         <div class="service-controls">
           <ul class="service-menu">
-            <li class="service-menu__item active">
-              <a class="service-menu__link btn active" href="#">Доставка</a>
+            <li class="service-menu-item service-menu-item_item1 active">
+              <label class="service-menu__marker service-menu__marker_marker1 service-menu__marker_active btn" for="service-btn1">Доставка</label>
             </li>
-            <li class="service-menu__item">
-              <a class="service-menu__link btn" href="#">Гарантия</a>
+            <li class="service-menu-item service-menu-item_item2">
+              <label class="service-menu__marker service-menu__marker_marker2 btn" for="service-btn2">Гарантия</label>
             </li>
-            <li class="service-menu__item">
-              <a class="service-menu__link btn" href="#">Кредит</a>
+            <li class="service-menu-item service-menu-item_item3">
+              <label class="service-menu__marker service-menu__marker_marker3 btn" for="service-btn3">Кредит</label>
             </li>
           </ul>
         </div>
@@ -220,6 +222,7 @@
         <a  class="brands__item brands__item_item-3" href="#"><img src="img/gopro-logo.png" width="260" height="100" alt="GoPro-logo"></a>
         <a  class="brands__item brands__item_item-4" href="#"><img src="img/vive-logo.png" width="260" height="100" alt="vive-logo"></a>
       </div>
+
       <div class="info">
         <div class="about-us">
           <h3 class="about-us__title">О нас</h3>
@@ -236,76 +239,79 @@
           <h3 class="contacts__title">Контакты</h3>
           <p class="contacts__info">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
           <div class="contacts-map">
-            <img src="img/map.png" width="560" height="222" alt="Карта">
+            <a class="js-open-map" href="#"><img src="img/map.png" width="560" height="222" alt="Карта"></a>
           </div>
           <button class="btn contacts__btn">напишите нам</button>
         </div>
       </div>
     </div>
 
-      <footer class="page-footer">
-        <div class="content-wrapper">
-          <nav class="footer-nav">
-            <div class="footer-logo"><a class="footer-logo__link">Device</a></div>
-            <ul class="footer-menu">
-              <li class="user-block">
-                <a class="user-block__link" href="#">Войти</a>
-              </li>
-              <li class="compare-block">
-                <a class="compare-block__link" href="#">Сравнить</a>
-              </li>
-              <li class="basket-block">
-                <a class="basket-block__link" href="#">Корзина</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="footer-middle">
-            <p class="address">г. Москва, ул. Строителей, 15</p>
-            <ul class="footer-service">
-              <li class="footer-service-item footer-service-item_1">
-                <a class="footer-service-item__link footer-service-item__link_1" href="#">Доставка</a>
-              </li>
-              <li class="footer-service-item footer-service-item_1">
-                <a class="footer-service-item__link footer-service-item__link_2" href="#">Гарантия</a>
-              </li>
-              <li class="footer-service-item footer-service-item_1">
-                <a class="footer-service-item__link footer-service-item__link_2" href="#">Контакты</a>
-              </li>
-            </ul>
-            <p class="phone">Тел.: +7 (495) 495-95-95</p>
+    <footer class="page-footer">
+      <div class="content-wrapper">
+        <nav class="footer-nav">
+          <div class="footer-logo"><a class="footer-logo__link">Device</a></div>
+          <ul class="footer-menu">
+            <li class="user-block">
+              <a class="user-block__link" href="#">Войти</a>
+            </li>
+            <li class="compare-block">
+              <a class="compare-block__link" href="#">Сравнить</a>
+            </li>
+            <li class="basket-block">
+              <a class="basket-block__link" href="#">Корзина</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="footer-middle">
+          <p class="address">г. Москва, ул. Строителей, 15</p>
+          <ul class="footer-service">
+            <li class="footer-service-item footer-service-item_1">
+              <a class="footer-service-item__link footer-service-item__link_1" href="#">Доставка</a>
+            </li>
+            <li class="footer-service-item footer-service-item_1">
+              <a class="footer-service-item__link footer-service-item__link_2" href="#">Гарантия</a>
+            </li>
+            <li class="footer-service-item footer-service-item_1">
+              <a class="footer-service-item__link footer-service-item__link_2" href="#">Контакты</a>
+            </li>
+          </ul>
+          <p class="phone">Тел.: +7 (495) 495-95-95</p>
+        </div>
+        <div class="footer-bottom">
+          <div class="footer-social">
+            <a class="footer-social__link footer-social__link_fb" href="#"><span class="visually-hidden">Фейсбук</span></a>
+            <a class="footer-social__link footer-social__link_inst" href="#"><span class="visually-hidden">Инстаграмм</span></a>
+            <a class="footer-social__link footer-social__link_tw" href="#"><span class="visually-hidden">Твиттер</span></a>
           </div>
-          <div class="footer-bottom">
-            <div class="footer-social">
-              <a class="footer-social__link footer-social__link_fb" href="#"><span class="visually-hidden">Фейсбук</span></a>
-              <a class="footer-social__link footer-social__link_inst" href="#"><span class="visually-hidden">Инстаграмм</span></a>
-              <a class="footer-social__link footer-social__link_tw" href="#"><span class="visually-hidden">Твиттер</span></a>
-            </div>
-            <div class="footer-copyright">
-              <a class="footer-copyright__link" href="https://htmlacademy.ru/"><span class="visually-hidden">Htmlacademy.ru</span></a>
-            </div>
+          <div class="footer-copyright">
+            <a class="footer-copyright__link" href="https://htmlacademy.ru/"><span class="visually-hidden">Htmlacademy.ru</span></a>
           </div>
         </div>
-      </footer>
+      </div>
+    </footer>
 
     <div class="modal-feedback">
       <button class="btn-close"><span class="visually-hidden">Закрыть</span></button>
-      <div class="half-width">
-        <label for="fullname-field">Ваше имя:</label>
-        <input type="text" name="fullname" id="fullname-field" placeholder="Представьтесь, пожалуйста">
-      </div>
-      <div class="half-width">
-        <label for="email-field">Ваш e-mail:</label>
-        <input type="email" name="email" id="email-field" placeholder="Для отправки ответа">
-      </div>
-      <label for="request-field">Текст письма:</label>
-      <textarea name="request" id="request-field"></textarea>
-      <button class="btn modal-btn" type="submit">Отправить</button>
+      <form action="#" method="get">
+        <div class="half-width">
+          <label for="fullname-field">Ваше имя:</label>
+          <input type="text" name="fullname" id="fullname-field" placeholder="Представьтесь, пожалуйста">
+        </div>
+        <div class="half-width">
+          <label for="email-field">Ваш e-mail:</label>
+          <input type="email" name="email" id="email-field" placeholder="Для отправки ответа">
+        </div>
+        <label for="request-field">Текст письма:</label>
+        <textarea name="request" id="request-field">В свободной форме</textarea>
+        <button class="btn modal-btn" type="submit">Отправить</button>
+      </form>
     </div>
-    <div class="modal-map">
-      <button class="btn-close"><span class="visually-hidden">Закрыть</span></button>
-    </div>
-
     
+    <div class="modal-map">
+      <button class="btn-close js-map-close"><span class="visually-hidden">Закрыть</span></button>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779953!2d37.52742931561666!3d55.68703098053586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2sul.+Stroiteley%2C+15%2C+Moskva%2C+Russia%2C+119311!5e0!3m2!1sen!2sby!4v1502280616067" width="960" height="559" style="border:0" allowfullscreen></iframe>
+    </div>   
 
+    <script src="js/script.min.js"></script>
   </body>
 </html>

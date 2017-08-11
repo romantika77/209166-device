@@ -5,7 +5,7 @@
     <title>Девайс: каталог</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
     <div class="content-wrapper">
@@ -87,14 +87,38 @@
       </ul>
     </div>
 
+    <div class="header-catalog-wrapper">
+      <div class="header-catalog-container">
+        <p class="filter-aside-title">Фильтр:</p>
+        <div class="filter-sort">
+          <p class="filter-sort__title">Сортировка:</p>
+          <ul class="filter-types">
+            <li class="filter-types__item">
+              <a class="filter-types__link filter-types__link_price filter-types__link_active" href="#">По цене</a>
+            </li>
+            <li class="filter-types__item">
+              <a class="filter-types__link filter-types__link_type" href="#">По типу</a>
+            </li>
+            <li  class="filter-types__item">
+              <a class="filter-types__link filter-types__link_popularity" href="#">По популярности</a>
+            </li>
+          </ul>
+          <div class="filter-pointers">
+            <a href="#" class="filter-pointers__arrow filter-pointers__arrow_up"><span class="visually-hidden">По возрастанию</span></a>
+            <a href="#" class="filter-pointers__arrow filter-pointers__arrow_down filter-pointers__arrow_down_active"><span class="visually-hidden">По убыванию</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="catalog-wrapper">
       <div class="catalog-container">
 
         <div class="filter-aside">
-          <p class="filter-aside__title">Фильтр:</p>
+          
           <form class="filter-form" action="get">
             <div class="filter-value">
-              <p>Стоимость</p>
+              <p class="filter-form__title">Стоимость</p>
               <div class="range-filter">
                 <div class="range-control">
                   <div class="scale">
@@ -114,93 +138,92 @@
               </div>   
             </div>
             <div class="filter-color">
-              <p>Цвет</p>
-              <input type="checkbox" name="black" id="checkbox-1" checked>
-              <label for="checkbox-1">Черный</label>
-              <input type="checkbox" name="white" id="checkbox-2">
-              <label for="checkbox-2">Белый</label>
-              <input type="checkbox" name="blue" id="checkbox-3" checked>
-              <label for="checkbox-3">Синий</label>
-              <input type="checkbox" name="red" id="checkbox-4" checked>
-              <label for="checkbox-4">Красный</label>
-              <input type="checkbox" name="pink" id="checkbox-5">
-              <label for="checkbox-5">Розовый</label>
+              <p class="filter-form__title filter-form__title_color">Цвет</p>
+              <p class="filter-color-item">
+                <input type="checkbox" name="black" id="checkbox-1" checked>
+                <label for="checkbox-1">Черный</label>
+              </p>
+              <p class="filter-color-item">
+                <input type="checkbox" name="white" id="checkbox-2">
+                <label for="checkbox-2">Белый</label>
+              </p>
+              <p class="filter-color-item">
+                <input type="checkbox" name="blue" id="checkbox-3" checked>
+                <label for="checkbox-3">Синий</label>
+              </p>
+              <p class="filter-color-item">
+                <input type="checkbox" name="red" id="checkbox-4" checked>
+                <label for="checkbox-4">Красный</label>
+              </p>
+              <p class="filter-color-item">
+                <input type="checkbox" name="pink" id="checkbox-5">
+                <label for="checkbox-5">Розовый</label>
+              </p>
             </div>
             <div class="filter-bluetooth">
-              <input type="checkbox" name="with-bluetooth" id="with-bluetooth-field">
-              <label for="with-bluetooth-field">Есть</label>
-              <input type="checkbox" name="without-bluetooth" id="without-bluetooth-field">
-              <label for="without-bluetooth-field">Нет</label>
+              <p class="filter-form__title filter-form__title_bluetooth">Bluetooth</p>
+              <p class="filter-bluetooth-item">
+                <input type="radio" name="bluetooth" id="radio-1" checked>
+                <label for="radio-1">Есть</label>
+              </p>
+              <p class="filter-bluetooth-item">
+                <input type="radio" name="bluetooth" id="radio-2">
+                <label for="radio-2">Нет</label>
+              </p>
             </div>
-            <button class="btn form-btn">Показать</button>
+            <button class="btn btn-form">Показать</button>
           </form>
         </div>
 
         <div class="assortment">
-          <div class="filter-sort">
-            <p class="filter-sort__title">Сортировка:</p>
-            <ul class="filter-types">
-              <li>
-                <a class="filter-types__item filter-types__item_active" href="#">По цене</a>
-              </li>
-              <li>
-                <a  class="filter-types__item" href="#">По типу</a>
-              </li>
-              <li>
-                <a  class="filter-types__item" href="#">По популярности</a>
-              </li>
-            </ul>
-            <div class="filter-pointers">
-              <a href="#" class="filter-pointers__arrow filter-pointers__arrow_up"><span class="visually-hidden">По возрастанию</span></a>
-              <a href="#" class="filter-pointers__arrow filter-pointers__arrow_down"><span class="visually-hidden">По убыванию</span></a>
-            </div>
-          </div>
 
           <div class="catalog">
             <div class="catalog-item">
-              <img class="catalog-item__image" src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
-              <span class="catalog-item__name">Любительская селфи-палка</span>
+              <div class="catalog-item-image"><img class="catalog-item__image" src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка"></div>
+              <a href="#"><h2 class="catalog-item__name">Любительская селфи-палка</h2></a>
               <span class="catalog-item__value">500 руб.</span>
               <div class="action">
                 <button class="btn action__btn action__btn_basket">В корзину</button>
-                <button class="btn action__btn action__btn_compare">Добавить к сравнению</button>
+                <button class="action__btn action__btn_compare">Добавить к сравнению</button>
               </div>
             </div>
             <div class="catalog-item">
-              <img  class="catalog-item__image" src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
-              <span class="catalog-item__name">Профессиональная селфи-палка</span>
+              <div class="catalog-item-image"><img  class="catalog-item__image" src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка"></div>
+              <a href="#"><h2 class="catalog-item__name">Профессиональная селфи&#8209;палка</h2></a>
               <span class="catalog-item__value">1 500 руб.</span>
               <div class="action">
                 <button class="btn action__btn action__btn_basket">В корзину</button>
-                <button class="btn action__btn action__btn_compare">Добавить к сравнению</button>
+                <button class="action__btn action__btn_compare">Добавить к сравнению</button>
               </div>
             </div>
             <div class="catalog-item">
-              <img  class="catalog-item__image" src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
-              <span class="catalog-item__name">Непотопляемая селфи-палка</span>
+              <div class="catalog-item-image"><img  class="catalog-item__image" src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка"></div>
+              <a href="#"><h2 class="catalog-item__name">Непотопляемая селфи-палка</h2></a>
               <span class="catalog-item__value">2 500 руб.</span>
               <div class="action">
                 <button class="btn action__btn action__btn_basket">В корзину</button>
-                <button class="btn action__btn action__btn_compare">Добавить к сравнению</button>
+                <button class="action__btn action__btn_compare">Добавить к сравнению</button>
               </div>
             </div>
             <div class="catalog-item">
-              <img  class="catalog-item__image" src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
-              <span class="catalog-item__name">Селфи-палка «Следуй за мной»</span>
+              <div class="catalog-item-image"><img  class="catalog-item__image" src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»"></div>
+              <a href="#"><h2 class="catalog-item__name">Селфи-палка «Следуй за мной»</h2></a>
               <span class="catalog-item__value">4 500 руб.</span>
               <div class="flag flag-new"><span class="visually-hidden">Новинка</span></div>
               <div class="action">
                 <button class="btn action__btn action__btn_basket">В корзину</button>
-                <button class="btn action__btn action__btn_compare">Добавить к сравнению</button>
+                <button class="action__btn action__btn_compare">Добавить к сравнению</button>
               </div>
             </div>
           </div>
           <div class="paginator">
-            <a class="paginator__link">Назад</a>
-            <a class="paginator__link paginator__link_active" href="#">1</a>
-            <a class="paginator__link" href="#">2</a>
-            <a class="paginator__link" href="#">3</a>
-            <a class="paginator__link" href="#">Вперед</a>
+            <a class="paginator__link paginator__link_prev" href="#">Назад</a>
+            <div class="paginator-pages">
+              <a class="paginator__link paginator__link_link-1 paginator__link_active">1</a>
+              <a class="paginator__link paginator__link_link-2" href="#">2</a>
+              <a class="paginator__link paginator__link_link-3" href="#">3</a>
+            </div>
+            <a class="paginator__link paginator__link_next" href="#">Вперед</a>
           </div>
         </div>
       </div>
@@ -209,7 +232,7 @@
     <footer class="page-footer">
       <div class="content-wrapper">
         <nav class="footer-nav">
-          <div class="footer-logo"><a class="footer-logo__link">Device</a></div>
+          <div class="footer-logo"><a class="footer-logo__link" href="index.html">Device</a></div>
           <ul class="footer-menu">
             <li class="user-block">
               <a class="user-block__link" href="#">Войти</a>

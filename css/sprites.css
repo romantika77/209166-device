@@ -1,203 +1,3 @@
-/*.sprite {
-    background-image: url(spritesheet.png);
-    background-repeat: no-repeat;
-    display: block;
-}
-
-.sprite-arrow-breadcrumbs {
-    width: 4px;
-    height: 7px;
-    background-position: -20px -20px;
-}
-
-.sprite-arrow-down-active {
-    width: 17px;
-    height: 9px;
-    background-position: -20px -67px;
-}
-
-.sprite-basket-peace {
-    width: 12px;
-    height: 12px;
-    background-position: -20px -116px;
-}
-
-.sprite-basket-yellow-hover {
-    width: 12px;
-    height: 12px;
-    background-position: -20px -168px;
-}
-
-.sprite-basket-yellow-peace {
-    width: 12px;
-    height: 12px;
-    background-position: -20px -220px;
-}
-
-.sprite-checkbox-active {
-    width: 23px;
-    height: 23px;
-    background-position: -20px -272px;
-}
-
-.sprite-checkbox-checked-active {
-    width: 23px;
-    height: 23px;
-    background-position: -20px -335px;
-}
-
-.sprite-checkbox-checked-hover {
-    width: 23px;
-    height: 23px;
-    background-position: -20px -398px;
-}
-
-.sprite-checkbox-checked-peace {
-    width: 23px;
-    height: 23px;
-    background-position: -20px -461px;
-}
-
-.sprite-circle-small-active {
-    width: 12px;
-    height: 12px;
-    background-position: -20px -524px;
-}
-
-.sprite-close-btn-active {
-    width: 55px;
-    height: 55px;
-    background-position: -20px -576px;
-}
-
-.sprite-close-btn-hover {
-    width: 55px;
-    height: 55px;
-    background-position: -20px -671px;
-}
-
-.sprite-close-btn-peace {
-    width: 55px;
-    height: 55px;
-    background-position: -20px -766px;
-}
-
-.sprite-compare-peace {
-    width: 10px;
-    height: 10px;
-    background-position: -20px -861px;
-}
-
-.sprite-compare-yellow-hover {
-    width: 10px;
-    height: 10px;
-    background-position: -20px -911px;
-}
-
-.sprite-compare-yellow-peace {
-    width: 10px;
-    height: 10px;
-    background-position: -20px -961px;
-}
-
-.sprite-facebook-hover {
-    width: 39px;
-    height: 38px;
-    background-position: -20px -1011px;
-}
-
-.sprite-htmlacademy-logo-hover {
-    width: 27px;
-    height: 34px;
-    background-position: -20px -1089px;
-}
-
-.sprite-htmlacademy-logo-peace {
-    width: 27px;
-    height: 34px;
-    background-position: -20px -1163px;
-}
-
-.sprite-insta-hover {
-    width: 39px;
-    height: 38px;
-    background-position: -20px -1237px;
-}
-
-.sprite-login-peace {
-    width: 13px;
-    height: 12px;
-    background-position: -20px -1315px;
-}
-
-.sprite-login-yellow-hover {
-    width: 13px;
-    height: 12px;
-    background-position: -20px -1367px;
-   
-}
-
-.sprite-login-yellow-peace {
-    width: 13px;
-    height: 12px;
-    background-position: -20px -1419px;
-}
-
-.sprite-plus-peace {
-    width: 16px;
-    height: 16px;
-    background-position: -20px -1471px;
-}
-
-.sprite-radio-active {
-    width: 25px;
-    height: 25px;
-    background-position: -20px -1527px;
-}
-
-.sprite-radio-checked-active {
-    width: 25px;
-    height: 25px;
-    background-position: -20px -1592px;
-}
-
-.sprite-radio-checked-hover {
-    width: 25px;
-    height: 25px;
-    background-position: -20px -1657px;
-}
-
-.sprite-radio-checked-peace {
-    width: 25px;
-    height: 25px;
-    background-position: -20px -1722px;
-}
-
-.sprite-search {
-    width: 16px;
-    height: 16px;
-    background-position: -20px -1787px;
-}
-
-.sprite-toggle-actve {
-    width: 20px;
-    height: 23px;
-    background-position: -20px -1843px;
-}
-
-.sprite-toggle-peace {
-    width: 14px;
-    height: 14px;
-    background-position: -20px -1906px;
-}
-
-.sprite-twitter-hover {
-    width: 38px;
-    height: 38px;
-    background-position: -20px -1960px;
-}
-*/
-
 .sprite {
     background-image: url(spritesheet.png);
     background-repeat: no-repeat;
@@ -234,170 +34,110 @@
     background-position: -20px -220px;
 }
 
-.sprite-checkbox-active {
-    width: 23px;
-    height: 23px;
-    background-position: -20px -272px;
-}
-
-.sprite-checkbox-checked-active {
-    width: 23px;
-    height: 23px;
-    background-position: -20px -335px;
-}
-
-.sprite-checkbox-checked-hover {
-    width: 23px;
-    height: 23px;
-    background-position: -20px -398px;
-}
-
-.sprite-checkbox-checked-peace {
-    width: 23px;
-    height: 23px;
-    background-position: -20px -461px;
-}
-
 .sprite-circle-small-active {
     width: 12px;
     height: 12px;
-    background-position: -20px -524px;
-}
-
-.sprite-close-btn-active {
-    width: 55px;
-    height: 55px;
-    background-position: -20px -576px;
-}
-
-.sprite-close-btn-hover {
-    width: 55px;
-    height: 55px;
-    background-position: -20px -671px;
-}
-
-.sprite-close-btn-peace {
-    width: 55px;
-    height: 55px;
-    background-position: -20px -766px;
+    background-position: -20px -272px;
 }
 
 .sprite-compare-peace {
     width: 10px;
     height: 10px;
-    background-position: -20px -861px;
+    background-position: -20px -324px;
 }
 
 .sprite-compare-yellow-hover {
     width: 10px;
     height: 10px;
-    background-position: -20px -911px;
+    background-position: -20px -374px;
 }
 
 .sprite-compare-yellow-peace {
     width: 10px;
     height: 10px;
-    background-position: -20px -961px;
+    background-position: -20px -424px;
 }
 
 .sprite-facebook-hover {
     width: 39px;
     height: 38px;
-    background-position: -20px -1011px;
+    background-position: -20px -474px;
 }
 
 .sprite-htmlacademy-logo-hover {
     width: 27px;
     height: 34px;
-    background-position: -20px -1089px;
+    background-position: -20px -552px;
 }
 
 .sprite-htmlacademy-logo-peace {
     width: 27px;
     height: 34px;
-    background-position: -20px -1163px;
+    background-position: -20px -626px;
 }
 
 .sprite-insta-hover {
     width: 39px;
     height: 38px;
-    background-position: -20px -1237px;
+    background-position: -20px -700px;
 }
 
 .sprite-login-peace {
     width: 13px;
     height: 12px;
-    background-position: -20px -1315px;
+    background-position: -20px -778px;
 }
 
 .sprite-login-yellow-hover {
     width: 13px;
     height: 12px;
-    background-position: -20px -1367px;
+    background-position: -20px -830px;
 }
 
 .sprite-login-yellow-peace {
     width: 13px;
     height: 12px;
-    background-position: -20px -1419px;
+    background-position: -20px -882px;
 }
 
 .sprite-plus-peace {
     width: 16px;
     height: 16px;
-    background-position: -20px -1471px;
-}
-
-.sprite-radio-active {
-    width: 25px;
-    height: 25px;
-    background-position: -20px -1527px;
-}
-
-.sprite-radio-checked-active {
-    width: 25px;
-    height: 25px;
-    background-position: -20px -1592px;
-}
-
-.sprite-radio-checked-hover {
-    width: 25px;
-    height: 25px;
-    background-position: -20px -1657px;
-}
-
-.sprite-radio-checked-peace {
-    width: 25px;
-    height: 25px;
-    background-position: -20px -1722px;
+    background-position: -20px -934px;
 }
 
 .sprite-search {
     width: 16px;
     height: 16px;
-    background-position: -20px -1787px;
+    background-position: -20px -990px;
 }
 
 .sprite-toggle-actve {
     width: 20px;
     height: 23px;
-    background-position: -20px -1843px;
+    background-position: -20px -1046px;
 }
 
 .sprite-toggle-peace {
     width: 14px;
     height: 14px;
-    background-position: -20px -1906px;
+    background-position: -20px -1109px;
 }
 
 .sprite-twitter-hover {
     width: 38px;
     height: 38px;
-    background-position: -20px -1960px;
+    background-position: -20px -1163px;
+}
+
+.sprite-z-checkbox {
+    width: 12px;
+    height: 7px;
+    background-position: -20px -1241px;
 }
 
 .sprite-z-close {
     width: 23px;
     height: 22px;
-    background-position: -20px -2038px;
+    background-position: -20px -1288px;
 }
