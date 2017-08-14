@@ -1278,7 +1278,8 @@ label[for="search-field"]::before {
   height: 7px;
   background-image: url("../img/sprites.png");
   background-repeat: no-repeat;
-  background-position: -20px -1241px;
+  background-position: -20px -967px;
+  background-color: transparent;
 }
 
 .filter-color-item input + label:hover::before {
