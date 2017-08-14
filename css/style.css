@@ -1759,14 +1759,14 @@ label[for="search-field"]::before {
 
 .footer-menu .user-block__link:active::before {
   left: -26px;
-  background-position: -20px -830px;
+  background-position: -20px -729px;
   opacity: 0.3;
 }
 
 .footer-menu .compare-block__link:active::before {
   top: 6px;
   left: -20px;
-  background-position: -20px -374px;
+  background-position: -20px -273px;
   opacity: 0.3;
 }
 
@@ -1919,7 +1919,7 @@ label[for="search-field"]::before {
 }
 
 .footer-copyright__link:active {
-  background-position: -20px -552px;
+  background-position: -20px -451px;
   opacity: 0.3;
 }
 
