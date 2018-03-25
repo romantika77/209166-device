@@ -1,4 +1,4 @@
-.sprite {
+ .sprite {
     background-image: url(spritesheet.png);
     background-repeat: no-repeat;
     display: block;
@@ -10,134 +10,104 @@
     background-position: -20px -20px;
 }
 
-.sprite-arrow-down-active {
-    width: 17px;
-    height: 9px;
-    background-position: -20px -67px;
-}
-
 .sprite-basket-peace {
     width: 12px;
     height: 12px;
-    background-position: -20px -116px;
+    background-position: -20px -67px;
 }
 
 .sprite-basket-yellow-hover {
     width: 12px;
     height: 12px;
-    background-position: -20px -168px;
+    background-position: -20px -119px;
 }
 
 .sprite-basket-yellow-peace {
     width: 12px;
     height: 12px;
-    background-position: -20px -220px;
-}
-
-.sprite-circle-small-active {
-    width: 12px;
-    height: 12px;
-    background-position: -20px -272px;
+    background-position: -20px -171px;
 }
 
 .sprite-compare-peace {
     width: 10px;
     height: 10px;
-    background-position: -20px -324px;
+    background-position: -20px -223px;
 }
 
 .sprite-compare-yellow-hover {
     width: 10px;
     height: 10px;
-    background-position: -20px -374px;
+    background-position: -20px -273px;
 }
 
 .sprite-compare-yellow-peace {
     width: 10px;
     height: 10px;
-    background-position: -20px -424px;
+    background-position: -20px -323px;
 }
 
 .sprite-facebook-hover {
     width: 39px;
     height: 38px;
-    background-position: -20px -474px;
+    background-position: -20px -373px;
 }
 
 .sprite-htmlacademy-logo-hover {
     width: 27px;
     height: 34px;
-    background-position: -20px -552px;
+    background-position: -20px -451px;
 }
 
 .sprite-htmlacademy-logo-peace {
     width: 27px;
     height: 34px;
-    background-position: -20px -626px;
+    background-position: -20px -525px;
 }
 
 .sprite-insta-hover {
     width: 39px;
     height: 38px;
-    background-position: -20px -700px;
+    background-position: -20px -599px;
 }
 
 .sprite-login-peace {
     width: 13px;
     height: 12px;
-    background-position: -20px -778px;
+    background-position: -20px -677px;
 }
 
 .sprite-login-yellow-hover {
     width: 13px;
     height: 12px;
-    background-position: -20px -830px;
+    background-position: -20px -729px;
 }
 
 .sprite-login-yellow-peace {
     width: 13px;
     height: 12px;
-    background-position: -20px -882px;
-}
-
-.sprite-plus-peace {
-    width: 16px;
-    height: 16px;
-    background-position: -20px -934px;
+    background-position: -20px -781px;
 }
 
 .sprite-search {
     width: 16px;
     height: 16px;
-    background-position: -20px -990px;
-}
-
-.sprite-toggle-actve {
-    width: 20px;
-    height: 23px;
-    background-position: -20px -1046px;
-}
-
-.sprite-toggle-peace {
-    width: 14px;
-    height: 14px;
-    background-position: -20px -1109px;
+    background-position: -20px -833px;
 }
 
 .sprite-twitter-hover {
     width: 38px;
     height: 38px;
-    background-position: -20px -1163px;
+    background-position: -20px -889px;
 }
 
 .sprite-z-checkbox {
     width: 12px;
     height: 7px;
-    background-position: -20px -1241px;
+    background-position: -20px -967px;
 }
 
 .sprite-z-close {
     width: 23px;
     height: 22px;
-    background-position: -20px -1288px;
+    background-position: -20px -1014px;
 }

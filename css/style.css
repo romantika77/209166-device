@@ -109,12 +109,33 @@ img {
 }
 
 .header-catalog-wrapper {
+  position: relative;
   min-height: 70px;
   margin-top: 40px;
-  background-image: -webkit-gradient(linear, left top, right top, from(#dddddd), color-stop(29%, #dddddd), color-stop(29%, rgba(0, 0, 0, 0.08)), to(rgba(0, 0, 0, 0.08)));
-  background-image: -webkit-linear-gradient(left, #dddddd, #dddddd 29%, rgba(0, 0, 0, 0.08) 29%, rgba(0, 0, 0, 0.08));
-  background-image: -o-linear-gradient(left, #dddddd, #dddddd 29%, rgba(0, 0, 0, 0.08) 29%, rgba(0, 0, 0, 0.08));
-  background-image: linear-gradient(to right, #dddddd, #dddddd 29%, rgba(0, 0, 0, 0.08) 29%, rgba(0, 0, 0, 0.08));
+}
+
+.header-catalog-wrapper::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 50%;
+  margin-right: 255px;
+  background-color: #dddddd;
+}
+
+.header-catalog-wrapper::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 50%;
+  margin-left: -300px;
+  background-color: rgba(0, 0, 0, 0.08);
 }
 
 .page-header {
@@ -177,7 +198,7 @@ img {
   color: rgba(0, 0, 0, 0.3);
   line-height: 36px;
   background-color: transparent;
-  border: none; 
+  border: none;
 }
 
 .search-block input[type="search"]:hover {
@@ -328,6 +349,7 @@ label[for="search-field"]::before {
 }
 
 .page-header .bottom-menu {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -401,7 +423,7 @@ label[for="search-field"]::before {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 1160px; 
+  width: 1160px;
   padding-left: 60px;
   padding-right: 60px;
   padding-bottom: 32px;
@@ -702,7 +724,7 @@ label[for="search-field"]::before {
 .popular_item__link_2::after {
   background-image: url("../img/monopods.png");
   background-position: center bottom;
-} 
+}
 
 .popular_item__link_3::after {
   background-image: url("../img/camera.png");
@@ -961,7 +983,7 @@ label[for="search-field"]::before {
   padding: 0;
   font-size: 47px;
   line-height: 47px;
-  font-family: "GilroyExtraBold", "Arial, sans-serif";
+  font-family: "GilroyExtraBold", "Arial", sans-serif;
   color: #000000;
 }
 
@@ -1031,7 +1053,7 @@ label[for="search-field"]::before {
   border: none;
   padding-right: 40px;
   padding-left: 40px;
-} 
+}
 
 .info .about-us::before,
 .info .contacts::before {
@@ -1042,7 +1064,7 @@ label[for="search-field"]::before {
   width: 80px;
   height: 7px;
   background-color: #000000;
-} 
+}
 
 /*?////////////////////////////////////////////////оформление внутренней страницы*/
 
@@ -1091,19 +1113,28 @@ label[for="search-field"]::before {
   text-decoration: none;
 }
 
-.breadcrumbs__link:hover {
+.breadcrumbs__link[href]:hover {
   color: rgba(0, 0, 0, 0.6);
 }
 
-.breadcrumbs__link:active {
+.breadcrumbs__link[href]:active {
   color: rgba(0, 0, 0, 0.1);
 }
 
 .catalog-wrapper {
-  background-image: -webkit-gradient(linear, left top, right top, from(#f0f0f0), color-stop(29%, #f0f0f0), color-stop(29%, transparent));
-  background-image: -webkit-linear-gradient(left, #f0f0f0, #f0f0f0 29%, transparent 29%);
-  background-image: -o-linear-gradient(left, #f0f0f0, #f0f0f0 29%, transparent 29%);
-  background-image: linear-gradient(to right, #f0f0f0, #f0f0f0 29%, transparent 29%);
+  position: relative;
+}
+
+.catalog-wrapper::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 50%;
+  margin-right: 253px;
+  background-color: #f0f0f0;
 }
 
 .catalog-container {
@@ -1487,7 +1518,7 @@ label[for="search-field"]::before {
   margin-bottom: 49px;
 }
 
-.catalog-item:nth-last-of-type(1), 
+.catalog-item:nth-last-of-type(1),
 .catalog-item:nth-last-of-type(2) {
   margin-bottom: 36px;
 }
